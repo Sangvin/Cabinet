@@ -6,17 +6,15 @@ public class Fournisseur {
 	private int tel;
 	private String mail;
 	private String adresse;
-	private Fourniture fourniture;
 	
 	public Fournisseur(int id, String nom, int tel, String mail,
-			String adresse, Fourniture fourniture) {
+			String adresse) {
 		super();
 		this.id = id;
 		this.nom = nom;
 		this.tel = tel;
 		this.mail = mail;
 		this.adresse = adresse;
-		this.fourniture = fourniture;
 	}
 
 	public int getId() {
@@ -59,13 +57,4 @@ public class Fournisseur {
 		this.adresse = adresse;
 	}
 
-	public Fourniture getFourniture() {
-		return fourniture;
-	}
-
-	public void setFourniture(Fourniture fourniture) {
-		this.fourniture = fourniture;
-	}
-	
-	
 }

@@ -10,9 +10,10 @@ public class Facture {
 	private int montant;
 	private Date date;
 	private String motif;
+	private boolean paye;
 	
 	public Facture(int id, Patient patient, Medecin medecin, String nomCabinet,
-			int montant, Date date, String motif) {
+			int montant, Date date, String motif, boolean paye) {
 		super();
 		this.id = id;
 		this.patient = patient;
@@ -21,6 +22,7 @@ public class Facture {
 		this.montant = montant;
 		this.date = date;
 		this.motif = motif;
+		this.paye = paye;
 	}
 
 	public int getId() {
@@ -77,6 +79,14 @@ public class Facture {
 
 	public void setMotif(String motif) {
 		this.motif = motif;
+	}
+
+	public boolean isPaye() {
+		return paye;
+	}
+
+	public void setPaye(boolean paye) {
+		this.paye = paye;
 	}
 	
 	
