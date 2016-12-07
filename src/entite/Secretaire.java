@@ -1,24 +1,22 @@
-package entité;
+package entite;
 
-public class Medecin {
+public class Secretaire {
 	private int id;
 	private String nom;
 	private String prenom;
 	private String login;
 	private String mdp;
-	private String spe;
 	private int tel;
 	private String mail;
-	
-	public Medecin(int id, String nom, String prenom, String login, String mdp,
-			String spe, int tel, String mail) {
+
+	public Secretaire(int id, String nom, String prenom, String login,
+			String mdp, int tel, String mail) {
 		super();
 		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.login = login;
 		this.mdp = mdp;
-		this.spe = spe;
 		this.tel = tel;
 		this.mail = mail;
 	}
@@ -52,12 +50,6 @@ public class Medecin {
 	public void setMdp(String mdp) {
 		this.mdp = mdp;
 	}
-	public String getSpe() {
-		return spe;
-	}
-	public void setSpe(String spe) {
-		this.spe = spe;
-	}
 	public int getTel() {
 		return tel;
 	}
@@ -70,6 +62,4 @@ public class Medecin {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	
-	
 }

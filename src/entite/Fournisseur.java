@@ -1,4 +1,4 @@
-package entité;
+package entite;
 
 public class Fournisseur {
 	private int id;

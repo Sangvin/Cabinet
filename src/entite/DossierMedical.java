@@ -1,4 +1,4 @@
-package entité;
+package entite;
 
 import java.util.ArrayList;
 import java.util.Date;
