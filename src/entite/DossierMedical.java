@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class DossierMedical {
-	private int id;
+	private int id; // lol
 	private Patient patient;
 	private ArrayList<Ordonnance> listeOrdonnance;
 	private ArrayList<String> vaccin;
