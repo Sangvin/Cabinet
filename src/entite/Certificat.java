@@ -3,7 +3,7 @@ package entite;
 import java.util.Date;
 
 public class Certificat {
-	private int id;
+	private int id; // lol
 	private Patient patient;
 	private Medecin medecin;
 	private String motif;
