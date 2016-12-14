@@ -14,7 +14,7 @@ import entite.RDV;
 
 public class DoctorImpl extends UnicastRemoteObject implements IDoctorRemote {
 
-	protected DoctorImpl() throws RemoteException {
+	public DoctorImpl() throws RemoteException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
