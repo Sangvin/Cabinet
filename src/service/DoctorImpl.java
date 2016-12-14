@@ -21,42 +21,43 @@ public class DoctorImpl extends UnicastRemoteObject implements IDoctorRemote {
 
 	public ArrayList<RDV> consultationRdv(Medecin medecin, Date date)
 			throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<RDV> liste = new ArrayList<>();
+		// TODO recuperer rdv depuis la bdd
+		return liste;
 	}
 
 	public boolean creationOrdonnance(Medecin medecin, Patient patient,
 			String description, String nomCabinet) throws RemoteException {
-		// TODO Auto-generated method stub
+		// TODO ajout dans la base
 		return false;
 	}
 
 	public FichePatient consultationFichePatient(Patient patient)
 			throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
+		FichePatient fiche = null;
+		// TODO recuperer fichepatient depuis la bdd
+		return fiche;
 	}
 
-	public DossierMedical creationDossierMedical(Patient patient,
+	public boolean creationDossierMedical(Patient patient,
 			ArrayList<Ordonnance> listOrdonnance, ArrayList<String> vaccin,
 			String traitementMedical, Medecin medecin) throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
+		// TODO ajout dossiermedical bdd
+		// TODO creation ordonnance 
+		return false;
 	}
 
 	public DossierMedical consultationDossierMedical(Patient patient)
 			throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
+		DossierMedical dossier = null;
+		// TODO recuperer dossiermedical depuis bdd
+		return dossier;
 	}
 
 	public boolean creationCertificat(Patient patient, Medecin medecin,
 			String motif, Date date, String description, String nomCabinet)
 			throws RemoteException {
-		// TODO Auto-generated method stub
+		// TODO ajout certificat dans la base
 		return false;
 	}
-
-	
-
 }
