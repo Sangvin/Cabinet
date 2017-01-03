@@ -22,6 +22,8 @@ public class LoginPanel extends JFrame{
 		txuser.setBounds(70,30,150,20);
 		pass.setBounds(70,65,150,20);
 		blogin.setBounds(110,100,80,20);
+		
+		blogin.setEnabled(false);
 
 		panel.add(blogin);
 		panel.add(txuser);
@@ -31,5 +33,20 @@ public class LoginPanel extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		// actionlogin();
+		
+		blogin.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				log();
+			}
+		});
+	}
+	
+	public void log()
+	{
+		if (this.txuser.getText().isEmpty())
+			System.out.println("vide");
 	}
 }
