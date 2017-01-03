@@ -12,18 +12,15 @@ public class SauverEnBase {
 	String url = "jdbc:mysql://localhost/cabinet";
 	String login = "root";
 	String passwd = "";
-	Connection cn = null;
+	java.sql.Connection cn = null;
 	Statement st = null;
 	try {
-		Class.forName("com.mysql.jdbc.Driver");
-		cn = (Connection) DriverManager.getConnection(url, login, passwd);
+		cn = bdd.Connection.getInstance();
 		st = (Statement) cn.createStatement();
 		String sql = "INSERT INTO patient VALUES ("+12+");";
 		
 		st.executeUpdate(sql);
 	} catch (SQLException e) {
-		e.printStackTrace();
-	} catch (ClassNotFoundException e) {
 		e.printStackTrace();
 	} finally {
 		try {
